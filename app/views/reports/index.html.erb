@@ -1,0 +1,9 @@
+<h1>Hello Reports</h1>
+<%= link_to('Create a new report?', new_report_path) %>
+
+<h3>Reports</h3>
+<% @reports.each do |r| %>
+    <%= r.title %><br>
+    <%= r.text %>
+    <hr>
+<% end %>
